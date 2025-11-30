@@ -98,12 +98,34 @@
         }
 
         @media (min-width: 768px) {
+            nav {
+                display: flex !important;
+                flex-direction: row !important;
+            }
+
             .menu-button {
-                display: none;
+                display: none !important;
             }
 
             nav ul {
                 display: flex !important; /* Override mobile styles */
+                position: static !important;
+                width: auto !important;
+                background-color: transparent !important;
+                box-shadow: none !important;
+                margin-top: 0 !important;
+                z-index: auto !important;
+            }
+
+            nav ul li {
+                width: auto !important;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 0.5rem 1rem !important;
+                text-align: center;
+                border-bottom: none !important;
             }
         }
 
@@ -224,7 +246,7 @@
 
         <section>
             <h2>Featured Video</h2>
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLutZed_By_AKJ_0wsTHEEEkkBXBRyHfAG" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
         </section>
 
         <section>

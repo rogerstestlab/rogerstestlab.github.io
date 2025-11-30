@@ -98,12 +98,34 @@
         }
 
         @media (min-width: 768px) {
+            nav {
+                display: flex !important;
+                flex-direction: row !important;
+            }
+
             .menu-button {
-                display: none;
+                display: none !important;
             }
 
             nav ul {
                 display: flex !important; /* Override mobile styles */
+                position: static !important;
+                width: auto !important;
+                background-color: transparent !important;
+                box-shadow: none !important;
+                margin-top: 0 !important;
+                z-index: auto !important;
+            }
+
+            nav ul li {
+                width: auto !important;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 0.5rem 1rem !important;
+                text-align: center;
+                border-bottom: none !important;
             }
         }
 
@@ -223,24 +245,10 @@
         <section>
             <div class="grid">
                 <article>
-                    <h2>Getting Started with LLMs</h2>
-                    <p>Learn the fundamentals of working with Large Language Models, from basic prompts to advanced techniques.</p>
-                    <iframe src="https://www.youtube.com/embed/videoseries?list=PL6M-0Mv_j1w8d2g8A68v064Tt6t4Zm61D" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
-                    <p><a href="#" role="button">Watch on YouTube</a></p>
-                </article>
-                
-                <article>
-                    <h2>AI Agent Development</h2>
-                    <p>Build autonomous AI agents that can perform complex tasks and interact with real-world systems.</p>
-                    <iframe src="https://www.youtube.com/embed/videoseries?list=PL6M-0Mv_j1w8d2g8A68v064Tt6t4Zm61E" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
-                    <p><a href="#" role="button">Watch on YouTube</a></p>
-                </article>
-                
-                <article>
-                    <h2>Production AI Systems</h2>
-                    <p>Learn how to deploy, monitor, and scale AI applications in production environments.</p>
-                    <iframe src="https://www.youtube.com/embed/videoseries?list=PL6M-0Mv_j1w8d2g8A68v064Tt6t4Zm61F" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
-                    <p><a href="#" role="button">Watch on YouTube</a></p>
+                    <h2>AI Website Builder with Claude</h2>
+                    <p>Building a no-code website builder using Claude.ai and modern web tech.</p>
+                    <iframe src="https://www.youtube.com/embed/videoseries?list=PLutZed_By_AKJ_0wsTHEEEkkBXBRyHfAG" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
+                    <p><a href="https://youtube.com/playlist?list=PLutZed_By_AKJ_0wsTHEEEkkBXBRyHfAG" role="button">Watch on YouTube</a></p>
                 </article>
             </div>
         </section>

@@ -98,12 +98,34 @@
         }
 
         @media (min-width: 768px) {
+            nav {
+                display: flex !important;
+                flex-direction: row !important;
+            }
+
             .menu-button {
-                display: none;
+                display: none !important;
             }
 
             nav ul {
                 display: flex !important; /* Override mobile styles */
+                position: static !important;
+                width: auto !important;
+                background-color: transparent !important;
+                box-shadow: none !important;
+                margin-top: 0 !important;
+                z-index: auto !important;
+            }
+
+            nav ul li {
+                width: auto !important;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 0.5rem 1rem !important;
+                text-align: center;
+                border-bottom: none !important;
             }
         }
 
@@ -248,6 +270,10 @@
                 <li><strong>AWS SageMaker</strong> – For managed ML model deployment.</li>
                 <li><strong>FastAPI</strong> – High-performance API framework for AI services.</li>
             </ul>
+        </section>
+
+        <section>
+            <p>All projects and experiments are shared on my <a href="https://github.com/rogerstestlab">GitHub</a>.</p>
         </section>
     </main>
 
